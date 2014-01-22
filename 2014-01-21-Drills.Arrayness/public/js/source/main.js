@@ -20,7 +20,7 @@
       boxNum += i;
       // boxNum *= i;
     }
-    var $randBox = $('<div id="numBox">' + boxNum  + '</div>').css('background-color', 'rgb(' + randColor() + ',' + randColor() + ',' + randColor() + ')');
+    var $randBox = $('<div id="numBox">' + boxNum  + '</div>').css('background-color', 'rgb('+randColor()+','+randColor()+','+randColor()+')');
     $('#randBox').append($randBox);
   }
 

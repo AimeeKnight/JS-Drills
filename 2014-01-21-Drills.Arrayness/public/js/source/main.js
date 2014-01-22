@@ -15,9 +15,10 @@
 
   function addSumBox(){
     var numColors = $('#colors').val().split(',').length;
-    var boxNum = 1;
+    var boxNum = 0;
     for (var i=1; i<=numColors; i++){
-      boxNum *= i;
+      boxNum += i;
+      // boxNum *= i;
     }
     var $randBox = $('<div id="numBox">' + boxNum  + '</div>').css('background-color', 'rgb(' + randColor() + ',' + randColor() + ',' + randColor() + ')');
     $('#randBox').append($randBox);

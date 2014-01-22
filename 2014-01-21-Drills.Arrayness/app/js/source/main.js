@@ -8,8 +8,7 @@
   function addColor(){
     var colors = $('#colors').val().split(',');
     $(colors).each(function(index, value){
-      var num = index + 1;
-      var $box = $('<div class="color">').text(num).css('background-color', value);
+      var $box = $('<div class="color">').text(index + 1).css('background-color', value);
       $('#newColors').append($box);
     });
   }

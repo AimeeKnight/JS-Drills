@@ -1,0 +1,31 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='utf-8')
+    title Jade Drills
+    link(rel="stylesheet", href="/css/normalize.css")
+    link(rel="stylesheet", href="/css/style.css")
+    script(src='/js/vendor/jquery-1.10.2.js')
+    script(src='/js/source/main.js')
+  body
+    header
+      h1 Weather Drill
+      button#get-weather Get Weather
+      h2 Description:
+      p#desc
+      h2 Direction:
+      p#direction
+      h2 Degrees:
+      p#degrees
+      h2 Speed:
+      p#speed
+      h2 Gust:
+      p#gust
+
+      ul#wind
+
+      select
+        option(value='pick') Pick One
+        option(value='a') A
+        option(value='b') B
+        option(value='c') C

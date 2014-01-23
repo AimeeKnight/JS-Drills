@@ -1,0 +1,26 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='utf-8')
+    title Jade Drills
+    link(rel="stylesheet", href="/css/normalize.css")
+    link(rel="stylesheet", href="/css/style.css")
+    script(src='/js/vendor/jquery-1.10.2.js')
+    script(src='/js/source/main.js')
+  body
+    header
+      h1 Shell Game Drill
+      #main
+      h4 Score:
+      p#score 0
+
+      button#play.
+        Play
+      h4#rand
+
+      #boxes
+        h4#0.box A
+        h4#1.box B
+        h4#2.box C
+
+      h4#result

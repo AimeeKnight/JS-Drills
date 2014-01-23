@@ -26,10 +26,12 @@
       var date = day.date.weekday;
       var forecast = day.conditions;
       var icon = day.icon_url;
-      var dayBox = $('<div class="box">'+date+'</div>');
-      var dayForecast = $('<div>'+forecast+'</div>');
+      var dayBox = $('<p>'+date+'</p>');
+      var dayForecast = $('<p>'+forecast+'</p>');
+      var dayForecastBox = $('<div class="box"></div>');
+      dayForecastBox.append(dayBox, dayForecast);
       var iconBox = $('<div class="icon"></div>').css('background-image', 'url('+icon+')');
-      $('#tom').append(dayBox, dayForecast,iconBox);
+      $('#tom').append(dayForecastBox,iconBox);
     });
   }
 

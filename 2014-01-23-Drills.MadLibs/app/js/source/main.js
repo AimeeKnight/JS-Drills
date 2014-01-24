@@ -16,8 +16,15 @@
     $('#sentence').text(old+'  '+text);
   }
 
+  function clear(){
+    $('#sentence').text('');
+    $('#wordBoxes').text('');
+    $('#words').val('').focus();
+  }
+
   function init(){
     $('#addWords').click(addWords);
+    $('#clear').click(clear);
     $('#wordBoxes').on('click', '.word', useWord);
   }
 

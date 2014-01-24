@@ -21,7 +21,7 @@
 
   function displayImgs(imgs){
     $.each(imgs, function(idx, img){
-      var $img = $('<img src="'+img+'">').text(idx + 1);
+      var $img = $('<img src="'+img+'">');
       $('#tom').append($img);
     });
   }

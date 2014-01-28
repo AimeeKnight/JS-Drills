@@ -29,7 +29,8 @@
       var city = cam.city;
       var imgTag = $('<img src="'+img+'">');
       var h4Tag = $('<h4>').text(city);
-      $('#display').append(imgTag, h4Tag);
+      var div = $('<div class="camBox">').append(imgTag, h4Tag);
+      $('#display').append(div);
     });
 
   }
